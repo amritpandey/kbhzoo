@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Copenhagen zoo</title>
+    <link href="myStyle.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+    <header>
+        <h1>Københavns Zoo</h1>
+        <p>A place to be familiar with wild life and nature</p>
+    </header>
+    <!--#include file="header.html" -->
+    <!--javascript implementation-->
+    <button type="button" onclick="getDate()">Today</button>
+    <p id="demo"></p>
+    <!--bootstrap implementation-->
+    <nav class="navbar navbar-expand-sm bg-light">
+
+        <ul class="navbar-nav nav-justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="loadDoc()">Opening Hours</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="membership.html">Membership</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Ticket</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Events</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--Ajax implementation-->
+    <!--<script>
+        //function loadDoc() {
+        //    var xhttp = new XMLHttpRequest();
+        //    xhttp.onreadystatechange = function () {
+        //        if (this.readyState == 4 && this.status == 200) {
+        //            document.getElementById("demo").innerHTML =
+        //                this.responseText;
+        //        }
+        //    };
+        //    xhttp.open("GET", "openingInfo.txt", true);
+        //    xhttp.send();
+        //}
+    </script>-->
+    <!--bootstrap carousel implementation-->
+    <section class="photoSlider">
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/tiger.jpg" alt="Tiger drinking water" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/deer.jpg" alt="bay lions" width="1100" height="500">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/birds.jpg" alt="Tiger" width="1100" height="500">
+                </div>
+
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </section>
+    <article>
+        <section class="wild">
+            <h2>Wild Animals</h2>
+            <p>
+                Was hour not the him go lurked to her would for from nor high formed of hight
+                in in befell revel fulness sacred agen ye but feere hill that scape lines
+                forgot by and his that ancient aye longed his alas were dwell save a shameless
+                longdeserted thy artless not at congealed save the glorious heralds grief passed
+                with day tales say in her disporting of alone he monks name not none which would
+                but his in care he though the hour lines tales whom nor the nor land one tis misery
+                deem misery time knew thy harold finds tis
+            </p>
+        </section>
+        <section class="Bird">
+            <h2>Birds</h2>
+            <p>
+                Was hour not the him go lurked to her would for from nor high formed of hight
+                in in befell revel fulness sacred agen ye but feere hill that scape lines
+                forgot by and his that ancient aye longed his alas were dwell save a shameless
+                longdeserted thy artless not at congealed save the glorious heralds grief passed
+                with day tales say in her disporting of alone he monks name not none which would
+                but his in care he though the hour lines tales whom nor the nor land one tis misery
+                deem misery time knew thy harold finds tis
+            </p>
+        </section>
+    </article>
+    
+    <script src="JavaScript.js"></script>
+    <footer>
+        <hr />
+        <p>København zoo © All rights reserverd 2020</p>
+    </footer>
+</body>
+</html>

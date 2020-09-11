@@ -1,0 +1,31 @@
+﻿html {
+    margin: 0px 150px;
+}
+body {
+    
+    font-size: 1.8rem;
+}
+header {
+    background-color: #B580F2;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 25px 50px 50px 100px;
+    
+}
+.photoSlider {
+    margin: 20px;
+    text-align: center;
+}
+article {
+    background-color: #A24B40;
+    padding:25px;
+}
+footer {
+    text-align:center;
+    padding: 50px 0 20px;
+}
+dl .infomember {
+    background-color: aqua;
+    margin: 20px;
+    padding: 25px;
+}

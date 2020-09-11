@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Membership </title>
+
+    <link href="myStyle.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Københavns Zoo</h1>
+        <p>A place to be familiar with wild life and nature</p>
+    </header>
+    <nav class="navbar navbar-expand-sm bg-light">
+
+        <ul class="navbar-nav nav-justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="loadDoc()">Opening Hours</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="membership.html">Membership</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Ticket</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Events</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="memberForm">
+        <form name="myForm" method="post" action="success.html" onsubmit="return validateForm()">
+            <fieldset>
+                <legend>Give your information</legend>
+                <dl class="infomember">
+                    <dt>First name:</dt>
+                    <dd> <input type="text" id="fname" name="fname"></dd>
+                    <dt>Last name:</dt>
+                    <dd> <input type="text" id="lname" name="lname"></dd>
+                    <dt>Email:</dt>
+                    <dd> <input type="email" id="email" name="email"></dd>
+                    <dt>Telephone:</dt>
+                    <dd>  <input type="tel" id="tel" name="tel"></dd>
+
+                    <dd><input type="submit" value="Submit"></dd>
+                </dl>
+
+            </fieldset>
+        </form>
+    </div>
+
+    <script src="JavaScript.js"></script>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <footer>
+        <hr />
+        <p>København zoo © All rights reserverd 2020</p>
+    </footer>
+</body>
+</html>
